@@ -1,59 +1,90 @@
-body{
-	margin: 0;
-	padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-	.square{
-	height: 120px;
-	width: 150px;
-	background-color: green;
-	}
-	.circle
-	{
-	height: 150px;
-	width: 150px;
-	background-color: yellow;
-	border-radius: 50%;
-	}
-	.rectangle
-	{
-	height: 80px;
-	width: 160px;
-	background-color: black;
-	}
-	.oval
-	{
-	height: 110px;
-	width: 150px;
-	background-color: yellow;
-	border-radius: 50%;
-	}
-	.toplefttriangle
-	{
-	height: 0;
-	width: 0;
-	border-top: 140px solid blue;
-	border-right: 140px solid transparent;
-	}
-	.toprighttriangle
-	{
-	height: 0;
-	width: 0;
-	border-top: 140px solid violet;
-	border-left: 140px solid transparent;
-	}
-	.uptriangle
-	{
-	height: 0;
-	width: 0;
-	border-left: 70px solid transparent;
-	border-right: 70px solid transparent;
-	border-bottom: 100px solid black;
-	}
-	.downtriangle
-	{
-	height: 0;
-	width: 0;
-	border-left: 70px solid transparent;
-	border-right: 70px solid transparent;
-	border-top: 100px solid green;
-	}
+
+.square {
+  height: 120px;
+  width: 150px;
+  background-color: green;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.rectangle {
+  height: 80px;
+  width: 160px;
+  background-color: black;
+}
+
+.oval {
+  height: 110px;
+  width: 150px;
+  background-color: orange; /* Changed color to orange */
+  border-radius: 50%;
+}
+
+.toplefttriangle {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 100px solid blue;
+}
+
+.toprighttriangle {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 100px solid violet;
+}
+
+.uptriangle {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 100px solid black;
+}
+
+.downtriangle {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid green;
+}
+
+/* New shape: Pentagon */
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+}
+
+.pentagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35px;
+  border-width: 50px 35px 0 35px;
+  border-color: transparent transparent transparent red;
+  border-style: solid;
+}
+
+.pentagon:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -35px;
+  border-width: 50px 35px 0 35px;
+  border-color: transparent red transparent transparent;
+  border-style: solid;
+}
